@@ -36,6 +36,7 @@ class TestingApp extends StatelessWidget {
     return ChangeNotifierProvider<Favorites>(
       create: (context) => Favorites(),
       child: MaterialApp.router(
+        debugShowCheckedModeBanner: false,
         title: 'Testing Sample',
         theme: ThemeData(
           primarySwatch: Colors.blue,
